@@ -14,8 +14,7 @@ import {
 } from "@material-ui/core";
 import { Formik } from "formik";
 import PropTypes from "prop-types";
-//------File Upload is work in progress-----
-//import FileUpload from './FileUpload';
+import FileUpload from './FileUpload';
 import Conversation from "./Conversation";
 import MessageSent from "./MessageSent";
 import FriendsList from "./FriendsList";
@@ -262,16 +261,15 @@ class Messages extends React.Component {
     });
   };
 
-  //-----File Uploader is still a work in progress-----
-  // updateUrl = (url) => {
-  // 	_logger('Url uploaded is ', url);
+  updateUrl = (url) => {
+   	_logger('Url uploaded is ', url);
 
-  // 	this.setState({ uploadedContent: url });
-  // };
+   	this.setState({ uploadedContent: url });
+   };
 
-  // handleShowUploader = () => {
-  // 	this.setState({ showUploader: !this.state.showUploader });
-  // };
+   handleShowUploader = () => {
+   	this.setState({ showUploader: !this.state.showUploader });
+   };
 
   render() {
     return (
@@ -347,7 +345,7 @@ class Messages extends React.Component {
                       />
                     </div>
                     <div className="align-box-row mt-3">
-                      {/* 
+                       
 											File uploader - work in progress
 											<div className="align-items-center">
 												<Tooltip arrow title="Upload Documents">
@@ -384,7 +382,7 @@ class Messages extends React.Component {
 														isMultiple={true}
 													/>
 												) : null}
-											</div> */}
+											</div>
                       <div className="ml-auto">
                         {this.state.isActive ? (
                           <Button
