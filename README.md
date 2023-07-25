@@ -19,5 +19,3 @@ Host-A-Fan is an MVP and due to the proprietary nature of the code I can only pr
 ● Implemented responsive components based on design mockups. 
 
 ● Participating in peer code reviews in an agile work environment to ensure high-quality code.
-
-### Click the link in the about section for a live preview
